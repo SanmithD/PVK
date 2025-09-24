@@ -22,8 +22,6 @@ export const UseVideoStore = create((set) => ({
           },
         }
       );
-      console.log(res.data);
-
       const videoData = res.data.items
         .filter(item => item.id.kind === "youtube#video")
         .map(item => ({
