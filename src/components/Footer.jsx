@@ -3,11 +3,30 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Section */}
+    <footer className="relative bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 pt-20">
+      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
+        <svg
+          className="relative block w-full md:h-60 h-100"
+          preserveAspectRatio="none"
+          viewBox="0 0 1000 200"
+          opacity="0.5"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="footer-wave" x1="0%" x2="100%" y1="0%" y2="0%">
+              <stop offset="0%" stopColor="#e41b1b" />
+              <stop offset="100%" stopColor="#FFEB3B" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,100 C250,200 750,0 1000,100 L1000,200 L0,200 Z"
+            fill="url(#footer-wave)"
+          />
+        </svg>
+      </div>
+
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8">
-          {/* Logo & Description */}
           <div className="flex flex-col gap-4">
             <Link to="/" className="text-2xl flex items-center gap-2 font-bold ">
               <img
@@ -17,15 +36,14 @@ function Footer() {
               />
               <p>Point of View Kannada</p>
             </Link>
-            <p className=" max-w-sm">
+            <p className="max-w-sm">
               Bringing thoughtful Kannada content, stories, and perspectives to
               your screen.
             </p>
           </div>
 
-          {/* Pages Navigation */}
           <div className="flex flex-col gap-2">
-            <h4 className="font-semibold  mb-2">Pages</h4>
+            <h4 className="font-semibold mb-2">Pages</h4>
             <Link to="/" className="hover:text-primary transition-colors">
               Home
             </Link>
@@ -35,23 +53,16 @@ function Footer() {
             <Link to="/work" className="hover:text-primary transition-colors">
               Work
             </Link>
-            <Link
-              to="/content"
-              className="hover:text-primary transition-colors"
-            >
+            <Link to="/content" className="hover:text-primary transition-colors">
               Videos
             </Link>
-            <Link
-              to="/contact"
-              className="hover:text-primary transition-colors"
-            >
+            <Link to="/contact" className="hover:text-primary transition-colors">
               Contact
             </Link>
           </div>
 
-          {/* Social Media & Contact */}
           <div className="flex flex-col gap-4">
-            <h4 className="font-semibold  mb-2">Connect</h4>
+            <h4 className="font-semibold mb-2">Connect</h4>
             <div className="flex gap-4">
               <a
                 href="#"
@@ -85,19 +96,17 @@ function Footer() {
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5" />
               <a
-                href="mailto:info@povkannada.com"
+                href="mailto:pointofviewkannada@gmail.com"
                 className="hover:text-primary transition-colors"
               >
-                info@povkannada.com
+                pointofviewkannada@gmail.com
               </a>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-gray-200 dark:border-gray-700 mt-8"></div>
 
-        {/* Bottom Section */}
         <div className="mt-4 text-center text-sm">
           &copy; {new Date().getFullYear()} POV Kannada. All rights reserved.
         </div>

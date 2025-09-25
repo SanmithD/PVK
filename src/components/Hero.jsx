@@ -44,9 +44,9 @@ function Hero() {
               <a href="https://www.youtube.com/@PointofViewKannada" target="_blank" className="flex items-center justify-center rounded-lg h-12 px-6 bg-red-800 cursor-pointer text-white text-base font-bold shadow-lg hover:bg-red-500 transition-all transform hover:scale-105">
                 <span className="flex items-center gap-2">Watch on YouTube <Play/> </span>
               </a>
-              <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#515bd4] text-white text-base font-bold shadow-lg hover:opacity-90 transition-all transform hover:scale-105">
+              <a href="https://www.instagram.com/point.of.view.kannada/" className="flex items-center justify-center rounded-lg h-12 px-6 bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#515bd4] text-white text-base font-bold shadow-lg hover:opacity-90 transition-all transform hover:scale-105">
                 <span className="flex items-center gap-2">Follow on Instagram <Instagram/> </span>
-              </button>
+              </a>
             </div>
           </div>
 
