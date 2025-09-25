@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Skeleton from "./components/Skeleton";
 import { UseThemeStore } from "./store/UseThemeStore";
 
 const Home = lazy(()=>import('./pages/Home'));
@@ -17,7 +18,7 @@ function App() {
   return (
     <div data-theme={theme} >
       <Navbar/>
-      <Suspense fallback={"Loading..."} >
+      <Suspense fallback={<Skeleton/>} >
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
