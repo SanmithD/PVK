@@ -1,6 +1,8 @@
 import { Facebook, Instagram, X, Youtube } from "lucide-react";
+import { UseContactStore } from "../store/UseContactStore";
 
 function Contact() {
+  const { submitForm, isLoading } = UseContactStore();
   return (
     <section className="relative bg-background-light/50 dark:bg-background-dark/50 py-16 sm:py-24">
       {/* Top Wave */}
@@ -12,7 +14,13 @@ function Contact() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
-            <linearGradient id="contact-wave-top" x1="0%" x2="100%" y1="0%" y2="0%">
+            <linearGradient
+              id="contact-wave-top"
+              x1="0%"
+              x2="100%"
+              y1="0%"
+              y2="0%"
+            >
               <stop offset="0%" stopColor="#e41b1b" />
               <stop offset="100%" stopColor="#FFEB3B" />
             </linearGradient>
@@ -30,7 +38,9 @@ function Contact() {
           <h2 className="text-3xl sm:text-4xl font-extrabold ">
             Connect With Us
           </h2>
-          <p className="mt-4 text-lg">Join our community across social media.</p>
+          <p className="mt-4 text-lg">
+            Join our community across social media.
+          </p>
         </div>
 
         {/* Social Links */}
@@ -53,7 +63,7 @@ function Contact() {
           </a>
           <a
             className="text-blue-600 hover:text-blue-700 transition-colors"
-            href="#"
+            href="https://www.facebook.com/profile.php?id=61581611120884&rdid=waw72U1aK9XNN15S&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17BYrWD4ow%2F#"
             target="_blank"
             aria-label="Facebook"
           >
@@ -61,7 +71,7 @@ function Contact() {
           </a>
           <a
             className="text-sky-400 hover:text-sky-500 transition-colors"
-            href="#"
+            href="https://x.com/povkannada?t=uMVQLVk8imCUat7XDYDF5w&s=08"
             target="_blank"
             aria-label="X"
           >
@@ -71,28 +81,36 @@ function Contact() {
 
         {/* Contact Form */}
         <div className="max-w-xl mx-auto bg-background-light dark:bg-background-dark rounded-xl shadow-lg p-8">
-          <form className="grid grid-cols-1 gap-6">
+          <form className="grid grid-cols-1 gap-6" onSubmit={submitForm}>
+            <p className="text-2xl font-medium" >Submit your feedback</p>
             <input
               className="form-input w-full rounded-lg bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 placeholder-gray-400 dark:placeholder-gray-500 h-12 p-4 focus:ring-2 focus:ring-primary transition"
               placeholder="Name"
               type="text"
+              name="name"
+              required
             />
             <input
               className="form-input w-full rounded-lg bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 placeholder-gray-400 dark:placeholder-gray-500 h-12 p-4 focus:ring-2 focus:ring-primary transition"
               placeholder="Email"
               type="email"
+              name="email"
+              required
             />
             <textarea
               className="form-textarea w-full rounded-lg bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 placeholder-gray-400 dark:placeholder-gray-500 p-4 focus:ring-2 focus:ring-primary transition"
               placeholder="Message"
               rows="5"
+              name="message"
+              required
             />
-              <button
-                className="flex relative z-50 items-center justify-center rounded-lg cursor-pointer h-12 px-8 bg-blue-500 text-white text-base font-bold shadow-lg hover:bg-primary/90 transition-all transform hover:scale-105 mx-auto"
-                type="submit"
-              >
-                Submit
-              </button>
+            <button
+              className="flex relative z-50 items-center justify-center rounded-lg cursor-pointer h-12 px-8 bg-blue-500 text-white text-base font-bold shadow-lg hover:bg-primary/90 transition-all transform hover:scale-105 mx-auto disabled:opacity-50 disabled:cursor-not-allowed"
+              type="submit"
+              disabled={isLoading}
+            >
+              {isLoading ? "Submitting..." : "Submit"}
+            </button>
           </form>
         </div>
       </div>
@@ -105,7 +123,13 @@ function Contact() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
-            <linearGradient id="contact-wave-bottom" x1="0%" x2="100%" y1="0%" y2="0%">
+            <linearGradient
+              id="contact-wave-bottom"
+              x1="0%"
+              x2="100%"
+              y1="0%"
+              y2="0%"
+            >
               <stop offset="0%" stopColor="#e41b1b" />
               <stop offset="100%" stopColor="#FFEB3B" />
             </linearGradient>

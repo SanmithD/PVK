@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <header className="relative bg-background-light dark:bg-background-dark">
-      <div className="w-full flex justify-between px-6 py-3 items-center border-b border-gray-500 relative z-10">
+      <div className="w-full flex justify-between px-6 md:pl-15 py-3 items-center border-b border-gray-500 relative z-10">
         <div className="flex items-center gap-2">
           <img
             src="/logo.jpg"

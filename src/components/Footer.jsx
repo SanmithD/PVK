@@ -65,28 +65,28 @@ function Footer() {
             <h4 className="font-semibold mb-2">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.youtube.com/@PointofViewKannada"
                 className="text-red-600 hover:text-red-700 transition-colors"
                 aria-label="YouTube"
               >
                 <Youtube className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/point.of.view.kannada/"
                 className="text-pink-500 hover:text-pink-600 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61581611120884&rdid=waw72U1aK9XNN15S&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17BYrWD4ow%2F#"
                 className="text-blue-600 hover:text-blue-700 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://x.com/povkannada?t=uMVQLVk8imCUat7XDYDF5w&s=08"
                 className="text-sky-400 hover:text-sky-500 transition-colors"
                 aria-label="Twitter"
               >
