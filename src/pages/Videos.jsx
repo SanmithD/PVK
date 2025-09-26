@@ -41,7 +41,6 @@ function Videos() {
         </h1>
 
         <div className="relative max-w-6xl mx-auto">
-          {/* Central timeline line */}
           <div className="absolute left-1/2 top-0 w-0.5 h-full bg-primary/30 transform -translate-x-1/2 hidden md:block"></div>
 
           {loading
@@ -52,10 +51,8 @@ function Videos() {
                 const isOdd = index % 2 === 0;
                 return (
                   <div key={video.videoId} className="relative mb-12 group">
-                    {/* Timeline dot */}
                     <div className="hidden md:block absolute left-1/2 md:left-1/2 top-6 w-4 h-4 bg-primary rounded-full border-4 border-white transform -translate-x-1/2 z-10 shadow-md"></div>
 
-                    {/* Video content - responsive */}
                     <div
                       className={`flex w-full md:w-1/2 ${
                         isOdd
@@ -101,7 +98,6 @@ function Videos() {
                       </a>
                     </div>
 
-                    {/* Connector line (desktop only) */}
                     <div
                       className={`hidden md:block absolute top-8 w-[10%] h-0.5 bg-primary/40 ${
                         isOdd ? "right-1/2 ml-2" : "left-1/2 ml-2"

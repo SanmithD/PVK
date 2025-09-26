@@ -5,7 +5,6 @@ function Contact() {
   const { submitForm, isLoading } = UseContactStore();
   return (
     <section className="relative bg-background-light/50 dark:bg-background-dark/50 py-16 sm:py-24">
-      {/* Top Wave */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
         <svg
           className="relative block w-full h-48 sm:h-64"
@@ -43,7 +42,6 @@ function Contact() {
           </p>
         </div>
 
-        {/* Social Links */}
         <div className="flex justify-center items-center gap-6 mb-16">
           <a
             className="text-red-600 hover:text-red-700 transition-colors"
@@ -79,7 +77,6 @@ function Contact() {
           </a>
         </div>
 
-        {/* Contact Form */}
         <div className="max-w-xl mx-auto bg-background-light dark:bg-background-dark rounded-xl shadow-lg p-8">
           <form className="grid grid-cols-1 gap-6" onSubmit={submitForm}>
             <p className="text-2xl font-medium" >Submit your feedback</p>

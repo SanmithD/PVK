@@ -119,7 +119,6 @@ function About() {
           </p>
         </section>
 
-        {/* Milestones Section */}
         <section className="mt-16">
           <h2 className="text-3xl font-bold text-center">Milestones</h2>
           <div className="w-20 h-1 bg-primary mx-auto mt-2 mb-8"></div>
@@ -127,7 +126,6 @@ function About() {
           <div className="relative">
             <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-light-surface dark:bg-dark-surface"></div>
 
-            {/* Milestone 1 */}
             <div className="relative mt-8">
               <div className="flex items-center relative">
                 <div className="w-1/2 pr-8 text-right">
@@ -147,7 +145,6 @@ function About() {
               </div>
             </div>
 
-            {/* Milestone 2 */}
             <div className="relative mt-8">
               <div className="flex items-center relative">
                 <div className="w-1/2 pr-8"></div>
