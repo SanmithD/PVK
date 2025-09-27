@@ -27,12 +27,14 @@ function About() {
                 life. Abhishek’s goal is to make learning easy and inspire new
                 perspectives.
               </p>
+              <div className="flex justify-center items-center md:justify-self-start" >
               <a
                 href="https://www.instagram.com/mr_.abhi.18/"
                 className="flex items-center gap-2 text-sky-400 mt-2 "
               >
                 Follow on <Instagram />{" "}
               </a>
+              </div>
             </div>
           </section>
           <p className="w-[70%] size-1 bg-sky-500 rounded-sm right-0 ml-13 md:ml-0"></p>
@@ -60,9 +62,11 @@ function About() {
                 lifestyle topics. His focus is on making content simple,
                 relatable, and engaging for Kannada audiences.
               </p>
+              <div className="flex justify-center items-center md:justify-self-start">
               <a href="https://www.instagram.com/_puneeth__.18/" className="flex items-center gap-2 text-sky-400 mt-2">
                 Follow on <Instagram />
               </a>
+              </div>
             </div>
 
             <div className="hidden md:block relative flex-shrink-0">
@@ -98,9 +102,11 @@ function About() {
                 clear, polished, and engaging, making complex topics easy to
                 understand for Kannada audiences.
               </p>
+              <div className="flex justify-center items-center md:justify-self-start">
               <a href="https://www.instagram.com/kaushal0047/" className="flex items-center gap-2 text-sky-400 mt-2">
                 Follow on <Instagram />
               </a>
+              </div>
             </div>
           </section>
           <p className="w-[70%] size-1 bg-sky-500 rounded-sm ml-13 md:ml-0"></p>
